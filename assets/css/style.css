@@ -1,0 +1,113 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	line-height: 1.5;
+	font-family: 'Open Sans', sans-serif;
+}
+a:link,a:visited{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.tiny{
+	background-color: #fcdb00;
+}
+.img-fluid {
+    margin-left: 86px;
+}
+.tiny .navbar,.tiny .collapse .navbar-collapse{
+	background-color: #fcdb00 !important;
+	color:#000;
+
+}
+.tiny .navbar-expand-lg .navbar-collapse {
+	flex-direction: row-reverse;
+	
+}
+.tiny .navbar-nav .nav-item a, .tiny .collapse .navbar-collapse .nav-item a{
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.tiny .navbar-light .navbar-nav .nav-link:after{
+	content: '';
+	background-color: #000;
+	height: 6px;
+	width: 0px;
+	border-radius: 10px;
+	position: absolute;
+	left: 38px;
+	bottom: -8px;
+	transition: all .3s ease-in-out;
+
+
+}
+.tiny .navbar-light .navbar-nav .nav-link:hover::after{
+	width: 100%;
+	left:0;
+
+}
+.tiny div#navbarNav {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+	text-transform: capitalize;
+
+}
+.inspiration {
+	background-color: #fcdb00;
+
+}
+.inspiration h2{
+	text-transform: capitalize;
+
+}
+.inspiration .para1{
+	font-size: 20px;
+	font-weight: 400;
+
+}
+.inspiration a i{
+	font-size: 44px;
+	color: #000;
+}
+.features .icon{
+	font-size: 46px;
+
+}
+.features .icon-info{
+	width: 90%;
+}
+.withUs{
+	background-color: #000;
+}
+.withUs .contactInfo li a{
+	color:#fff;
+	text-transform: capitalize;
+}
+
+
+
+
+
+@media all and (max-width:768px) {
+	 .features .icon-info{
+		/* font-size: 46px; */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		
+	
+	} 
+	.tiny .navbar-light .navbar-nav .nav-link:hover::after{
+		width: 25%;
+		left:0px;
+	}
+}
